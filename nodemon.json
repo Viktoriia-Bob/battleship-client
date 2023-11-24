@@ -1,0 +1,7 @@
+{
+  "watch": [".", ".env"],
+  "ext": "ts, json, yml",
+  "exec": "ts-node ./src/index.ts",
+  "legacyWatch": true,
+  "stdin": false
+}
