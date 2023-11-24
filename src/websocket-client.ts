@@ -40,7 +40,7 @@ export class WebsocketClient {
   shipSizes = [1];
 
   constructor() {
-    this.socket = io('ws://localhost:8080');
+    this.socket = io((process.env.WEBSOCKET_ADDRESS || '').toString());
     this.setupSocketEvents();
   }
 
